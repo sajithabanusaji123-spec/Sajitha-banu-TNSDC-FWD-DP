@@ -1,0 +1,235 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Pavithra S — Digital Portfolio</title>
+
+  <!-- Google font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+      <div class="photo-wrap">
+
+        <img id="profileImg" src="https://via.placeholder.com/220" alt="Pavithra Profile" />
+
+      </div>
+
+      <h1 class="name">PAVITHRA.S</h1>
+
+      <p class="subtitle">Student of JSREC</p>
+
+      <nav class="nav">
+
+        <button class="nav-btn active" data-section="about">About</button>
+
+        <button class="nav-btn" data-section="resume">Resume</button>
+
+        <button class="nav-btn" data-section="projects">Projects</button>
+
+        <button class="nav-btn" data-section="contact">Contact</button>
+
+      </nav>
+
+      <section class="side-block">
+
+        <h3>Contact</h3>
+
+        <p><strong>Phone:</strong> +91 999 441 6354</p>
+
+        <p><strong>Email:</strong> pavithra16354@gmail.com</p>
+
+        <p><strong>Location:</strong> Vivekananda Nagar, Tiruppur</p>
+
+      </section>
+
+      <section class="side-block">
+
+        <h3>Education</h3>
+
+        <p><strong>2024 - 2028</strong><br>Jai Shri Ram Engineering College<br>Computer Science Engineering</p>
+
+        <p><strong>2010 - 2024</strong><br>Vivekananda Vidyalaya Matriculation Higher Sec School</p>
+
+      </section>
+
+    </aside>
+
+    <!-- Main content -->
+
+    <main class="main">
+
+      <section id="about" class="panel active">
+
+        <h2>About Me</h2>
+
+        <p class="lead">
+
+          I am Pavithra, a motivated and responsible individual with strong interest in Computer Science and Technology.
+
+          I enjoy learning new skills, solving problems and applying knowledge in practical work. I aim to contribute
+
+          effectively to any team or project I am part of.
+
+        </p>
+
+        <h3>Internships</h3>
+
+        <ul>
+
+          <li>Completed internship in <strong>Data Science</strong></li>
+
+        </ul>
+
+        <h3>Skills & Extras</h3>
+
+        <ul>
+
+          <li>Programming Languages: Python, Java, C (basics)</li>
+
+          <li>Problem solving and logical thinking</li>
+
+          <li>Data structures: Linked List, Stack, Queue</li>
+
+          <li>Basic knowledge of Database Management</li>
+
+          <li>Teamwork, communication, fast learner</li>
+
+        </ul>
+
+      </section>
+
+      <section id="resume" class="panel">
+
+        <h2>Resume</h2>
+
+        <article class="card">
+
+          <h4>Education</h4>
+
+          <p><strong>Jai Shri Ram Engineering College</strong> — Computer Science (2024 - 2028)</p>
+
+        </article>
+
+        <article class="card">
+
+          <h4>Experience</h4>
+
+          <p>No full-time experience yet. Internship: Data Science.</p>
+
+        </article>
+
+        <article class="card">
+
+          <h4>Technical</h4>
+
+          <ul>
+
+            <li>Python — data analysis, scripting</li>
+
+            <li>HTML/CSS/JavaScript — web basics</li>
+
+            <li>SQL — basic queries and DB concepts</li>
+
+          </ul>
+
+        </article>
+
+      </section>
+
+      <section id="projects" class="panel">
+
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+          <div class="project">
+
+            <h4>Project 1 — Small Data Analysis</h4>
+
+            <p>Short summary of the project, tools used, and outcome.</p>
+
+            <a href="#" class="btn" target="_blank" rel="noopener">View repo</a>
+
+          </div>
+
+          <div class="project">
+
+            <h4>Project 2 — Portfolio Website</h4>
+
+            <p>A responsive portfolio built with HTML/CSS/JS.</p>
+
+            <a href="#" class="btn" target="_blank" rel="noopener">View demo</a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="contact" class="panel">
+
+        <h2>Contact Me</h2>
+
+        <p>Want to collaborate or ask a question? Send a message below.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+
+          <label>
+
+            Name
+
+            <input type="text" name="name" id="name" required />
+
+          </label>
+
+          <label>
+
+            Email
+
+            <input type="email" name="email" id="email" required />
+
+          </label>
+
+          <label>
+
+            Message
+
+            <textarea name="message" id="message" rows="5" required></textarea>
+
+          </label>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+
+          <p id="formResult" class="form-result" aria-live="polite"></p>
+
+        </form>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
